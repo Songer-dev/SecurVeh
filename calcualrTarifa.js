@@ -3,10 +3,10 @@ const { calcularTarifaServicio } = require('./modulos');
 // Ejemplo de uso con validación de parámetros
 try {
     const recibo = calcularTarifaServicio(
-        "María Rodríguez",  // nombreCliente (string)
-        "ABC-123",         // placa (string)
-        "Vehículos menores con motor", // tipoVehiculo (string)
-        3                  // horas (number)
+        "María Rodríguez",  
+        "ABC-123",         
+        "Vehículos menores con motor", 
+        3                  
     );
     console.log(recibo);
 } catch (error) {
