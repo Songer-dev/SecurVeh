@@ -115,4 +115,4 @@ function calcularTarifaServicio(nombreCliente, placa, tipoVehiculo, horas) {
 module.exports = {
     generarTarifario,
     calcularTarifaServicio
-};
+};//subida
