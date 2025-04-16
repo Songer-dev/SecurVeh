@@ -91,9 +91,11 @@ function calcularTarifaServicio(nombreCliente, placa, tipoVehiculo, horas) {
     const descripcionVehiculo = obtenerDescripcionVehiculo(tipoVehiculo);
     
     // Cálculos
-    const subtotal = tarifaPorHora * horas;
-    const igv = subtotal * 0.18;
-    const total = subtotal + igv;
+    const total = tarifaPorHora * horas;
+    const igv = total * 0.18;
+    const subtotal = total - igv;
+    
+    
     
     // Generar recibo
     return `
